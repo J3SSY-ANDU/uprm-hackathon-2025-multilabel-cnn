@@ -1,0 +1,20 @@
+# macOS system files
+.DS_Store
+
+# Log files
+*.log
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+*-checkpoint.*
+
+# Data files (if not public/sample)
+data/*.csv
+
+# Model checkpoints and binaries
+model_checkpoints/
+*.pt
+
+# Python cache
+__pycache__/
+*.pyc
