@@ -9,13 +9,25 @@ The University of Puerto Rico at Mayagüez (UPRM) Hackathon is an annual event t
 ## CNN Multilabel Image Classification Purpose
 Multilabel image classification enables a model to assign multiple tags or classes to a single image, which is essential for real-world scenarios such as object detection, medical imaging, and automated tagging systems. Our project leverages a CNN architecture to learn and predict multiple labels for each image, focusing on accuracy, efficiency, and scalability.
 
+## Dataset
+We used the [NASA Geographical Objects Multilabel Dataset](https://www.kaggle.com/datasets/olebro/nasa-geographical-objects-multilabel-dataset), which contains diverse satellite imagery labeled with multiple geographical object categories. The dataset can be automatically downloaded using `kagglehub` as follows:
+
+```python
+import kagglehub
+path = kagglehub.dataset_download("olebro/nasa-geographical-objects-multilabel-dataset")
+```
+
 ## Technologies Used
 - Python
-- TensorFlow / Keras (Deep Learning Framework)
-- NumPy, Pandas (Data Manipulation)
-- Matplotlib, Seaborn (Visualization)
-- Scikit-learn (Preprocessing and Metrics)
-- Jupyter Notebook (Development & Experimentation)
+- PyTorch (Deep Learning Framework)
+- Torchvision (Pretrained Models & Image Transformations)
+- OpenCV (Image Processing, via opencv-python-headless)
+- NumPy (Numerical Computation)
+- Pandas (Data Handling & Manipulation)
+- Matplotlib & Seaborn (Data Visualization)
+- scikit-learn (Metrics, Data Splitting, Resampling)
+- tqdm (Progress Bars)
+- kagglehub (Dataset Download and Integration)
 
 ## Credits / Contributors
 This project was developed by a multidisciplinary team for the UPRM Hackathon 2025:
